@@ -1,0 +1,16 @@
+{
+  "name": "IconExplorer",
+  "version": "0.0.1",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "node_modules/react-native/packager/packager.sh"
+  },
+  "dependencies": {
+    "@exponent/vector-icons": "^1.0.4",
+    "exponent": "^10.0.0",
+    "lodash": "^4.0.0",
+    "react": "~15.3.0",
+    "react-native": "github:exponentjs/react-native#sdk-10.0.0"
+  }
+}
