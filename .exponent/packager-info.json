@@ -1,8 +1,0 @@
-{
-  "exponentServerPort": 19000,
-  "packagerPort": 19003,
-  "packagerPid": 13351,
-  "exponentServerNgrokUrl": "https://39-hmb.ccheever.icon-explorer.exp.direct",
-  "packagerNgrokUrl": "https://packager.39-hmb.ccheever.icon-explorer.exp.direct",
-  "ngrokPid": 13363
-}
