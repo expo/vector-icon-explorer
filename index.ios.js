@@ -2,11 +2,19 @@ import Exponent from 'exponent';
 import React, { Component } from 'react';
 import {
   AppRegistry,
+  Dimensions,
   NavigatorIOS,
   StyleSheet,
   StatusBar,
   View,
 } from 'react-native';
+
+import {
+  createRouter,
+  NavigationProvider,
+  StackNavigation,
+} from '@exponent/ex-navigation';
+
 
 import IconSetList from './IconSetList';
 
@@ -16,9 +24,22 @@ const styles = StyleSheet.create({
   },
 });
 
+import Router from './Router';
+
 export default function IconExplorer(props) {
   return (
-    <View>
+    <NavigationProvider router={Router}>
+      <StackNavigation
+        initialRoute={Router.getRoute('IconExplorer')}
+        defaultRouteConfig={{
+          navigationBar: {
+            backgroundColor: '#000',
+            tintColor: '#fff',
+            title: 'Vampire Clown',
+          }
+        }}
+      />
+      {/*
       <NavigatorIOS
         style={styles.container}
         initialRoute={{
@@ -26,9 +47,10 @@ export default function IconExplorer(props) {
           component: IconSetList,
         }}
         itemWrapperStyle={styles.itemWrapper}
-      />
-      <StatusBar barStyle="default" />
-    </View>
+      >
+      */}
+        <StatusBar barStyle="default" />
+      </NavigationProvider>
   );
 }
 

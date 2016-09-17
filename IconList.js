@@ -57,6 +57,14 @@ export default class IconList extends Component {
     };
   }
 
+  static route = {
+    navigationBar: {
+      title(params) {
+        return params.title;
+      },
+    }
+  }
+
   componentDidMount() {
     if (Platform.OS === 'osx') {
       this._searchListner =  DeviceEventEmitter.addListener('onSearchIcons',

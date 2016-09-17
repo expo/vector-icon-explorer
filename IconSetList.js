@@ -14,6 +14,8 @@ import dismissKeyboard from 'dismissKeyboard';
 
 import _ from 'lodash';
 
+import Router from './Router';
+
 import IconList from './IconList';
 import {
   Entypo,
@@ -145,6 +147,14 @@ export default class IconSetsList extends Component {
     };
   }
 
+  static route = {
+    navigationBar: {
+      title: 'Vector Icons Showcase',
+    }
+  }
+
+
+
   render() {
     return (
       <ListView
@@ -217,7 +227,8 @@ export default class IconSetsList extends Component {
 
   _pressRow(rowID) {
     const iconSet = ICON_SETS[rowID];
-    if (Platform.OS === 'ios') {
+    // if (Platform.OS === 'ios') {
+    if (false) {
       this.props.navigator.push({
         title: iconSet.name,
         component: IconList,
@@ -225,11 +236,18 @@ export default class IconSetsList extends Component {
       });
     } else {
       dismissKeyboard();
+      this.props.navigator.push(Router.getRoute('IconList', {
+        title: iconSet.name,
+        name: 'iconSet',
+        iconSet,
+      }));
+      /*
       this.props.navigator.push({
         title: iconSet.name,
         name: 'iconSet',
         iconSet,
       });
+      */
     }
   }
 }

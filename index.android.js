@@ -4,6 +4,7 @@ import {
   AppRegistry,
   BackAndroid,
   Navigator,
+  StatusBar,
   StyleSheet,
   ToolbarAndroid,
   View,
@@ -73,12 +74,16 @@ function IconExplorer(props) {
   };
 
   return (
-    <Navigator
-      style={styles.container}
-      initialRoute={initialRoute}
-      configureScene={() => Navigator.SceneConfigs.FadeAndroid}
-      renderScene={RouteMapper}
-    />
+    <View style={{
+        flex: 1,
+    }}>
+      <Navigator
+        style={styles.container}
+        initialRoute={initialRoute}
+        configureScene={() => Navigator.SceneConfigs.FadeAndroid}
+        renderScene={RouteMapper}
+      />
+    </View>
   );
 }
 
