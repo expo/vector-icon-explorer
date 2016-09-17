@@ -26,6 +26,8 @@ const styles = StyleSheet.create({
 
 import Router from './Router';
 
+console.disableYellowBox = true; 
+
 export default function IconExplorer(props) {
   return (
     <NavigationProvider router={Router}>
