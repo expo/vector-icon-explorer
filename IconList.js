@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   searchBar: {
-    marginTop: (Platform.OS === 'android' ? 0 : 64),
     padding: 3,
     paddingLeft: 8,
     flexDirection: 'row',

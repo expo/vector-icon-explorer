@@ -1,8 +1,7 @@
-IconExplorer
-============
+vector-icon-explorer
+====================
 
-To run on OSX you must first install `react-native-desktop` with:
+To use react-native-vector-icons with Exponent, see:
+https://docs.getexponent.com/versions/icons/guides/icons.html
 
-```
-$ npm install react-native-desktop@0.6.5
-```
+Try this demo out: https://getexponent.com/@community/vector-icon-showcase

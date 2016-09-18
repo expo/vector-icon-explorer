@@ -6,13 +6,13 @@
   "version": "1.0.0",
   "orientation": "portrait",
   "primaryColor": "#222222",
-  "iconUrl": "http://ccheever.com/Exponent/vector-icon-explorer/ExperienceIcon.png",
+  "iconUrl": "https://s3.amazonaws.com/exp-us-standard/icons/vector-icon-app-icon.png",
   "notification": {
     "iconUrl": "https://s3.amazonaws.com/exp-us-standard/placeholder-push-icon-blue-circle.png",
     "color": "#000000"
   },
   "loading": {
-    "iconUrl": "https://cloud.githubusercontent.com/assets/378279/12009887/33f4ae1c-ac8d-11e5-8666-7a87458753ee.png",
+    "iconUrl": "https://s3.amazonaws.com/exp-us-standard/icons/vector-icon-loading-icon.png",
     "hideExponentText": false
   },
   "packagerOpts": {
